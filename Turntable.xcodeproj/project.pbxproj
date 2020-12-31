@@ -61,11 +61,11 @@
 				4E6D108B259C3C4600FC8CBC /* AppDelegate.swift */,
 				4E6D108D259C3C4600FC8CBC /* SceneDelegate.swift */,
 				4E6D108F259C3C4600FC8CBC /* ViewController.swift */,
+				4E6D10A1259C57FF00FC8CBC /* WheelImageView.swift */,
 				4E6D1091259C3C4600FC8CBC /* Main.storyboard */,
 				4E6D1094259C3C4700FC8CBC /* Assets.xcassets */,
 				4E6D1096259C3C4700FC8CBC /* LaunchScreen.storyboard */,
 				4E6D1099259C3C4700FC8CBC /* Info.plist */,
-				4E6D10A1259C57FF00FC8CBC /* WheelImageView.swift */,
 			);
 			path = Turntable;
 			sourceTree = "<group>";

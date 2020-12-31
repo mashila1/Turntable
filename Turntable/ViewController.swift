@@ -11,12 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var wheelImage: WheelImageView!
+    @IBOutlet var degree: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
     }
     @IBAction func clickRotateWheel(_ sender:Any){
+        print("123")
         wheelImage.rotataeGraduslly{ result in
             let alerContoller = UIAlertController(title: "你轉到了\(result)區塊", message: nil, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "確認", style: .cancel, handler: nil)

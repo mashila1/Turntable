@@ -13,13 +13,15 @@ class WheelImageView: UIImageView {
     var currentValue: Double = 0
     func rotataeGraduslly(handler: @escaping(String)->()){
         var result = ""
+        var degree1 = 0.0
         let randomDouble = Double.random(in: 0..<2*Double.pi)
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         CATransaction.begin()
         rotateAnimation.fromValue = currentValue
         currentValue = currentValue + 100*Double.pi + randomDouble
         let value = currentValue.truncatingRemainder(dividingBy: Double.pi*2)
-        let degree = value * 180
+        let degree = integer_t(value * 180)%360
+        print(degree)
         switch degree{
         case 0..<45:
             result = "light blue"
