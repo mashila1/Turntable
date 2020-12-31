@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // https://www.itdaan.com/tw/e0b5c42162b6c6d9298fd4e2ef2ba9a5
     @IBOutlet weak var wheelImage: WheelImageView!
-    @IBOutlet var degree: UILabel!
+    @IBOutlet weak var youwantoeatImage: UIImageView!
+    @IBOutlet weak var youwantoeatImagechinese: UIImageView!
     override func viewDidLoad() {
+        youwantoeatImage.image = UIImage(named: "1.jpg")
+        youwantoeatImagechinese.image = UIImage(named: "2.jpg")
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         

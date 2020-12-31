@@ -13,7 +13,7 @@ class WheelImageView: UIImageView {
     var currentValue: Double = 0
     func rotataeGraduslly(handler: @escaping(String)->()){
         var result = ""
-        var degree1 = 0.0
+        // var degree1 = 0.0
         let randomDouble = Double.random(in: 0..<2*Double.pi)
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         CATransaction.begin()
